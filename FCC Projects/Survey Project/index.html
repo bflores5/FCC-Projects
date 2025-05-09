@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">
+        Chicken Sandwich Shop
+        <title>Survey Form</title>
+    </h1>
+</head>
+
+<body>
+    <p id="description">Please tell us how we did today. Win a free sandwich!</p>
+    <form method="post" id="survey-form">
+
+        <!-- 1. information-->
+        <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+        <label for="email" id="email-label">Email <input type="email" placeholder="Enter your email" id="email" required></label>
+        <label for="age" id="number-label">Age (optional) <input type="number" id="number" placeholder="Age" min="13" max="120"></label>
+
+        <!-- 2. how much time they spent-->
+        <label for="dropdown">How long did you wait in line for? <select name="hours" id="dropdown" required>
+                <option value="">Select</option>
+                <option value="lessthan1">>1 Hour</option>
+                <option value="one-hour">1 Hour</option>
+                <option value="two-hours">2 Hours</option>
+                <option value="three-hours">3 Hours</option>
+                <option value="fourplus-hours">4+ Hours</option>
+            </select>
+
+            <!-- 3. What they got -->
+        </label>
+        <legend>Which food(s) did you get today? (select all that apply)</legend>
+        <label for="cs-regular"><input type="checkbox" class="inline" value="1" id="cs-regular">
+            <option value="cs-regular">Chicken Sandwich</option>
+        </label>
+        <label for="cs-spicy"><input type="checkbox" class="inline" value="2" id="cs-spicy">
+            <option value="cs-spicy">Chicken Sandwich Spicy</option>
+        </label>
+        <label for="fries"><input type="checkbox" class="inline" value="3" id="fries">
+            <option value="fries">Curly Fries</option>
+        </label>
+        <label for="bites"><input type="checkbox" class="inline" value="4" id="bites">
+            <option value="bites">Chicken Bites</option>
+        </label>
+
+
+        <!-- 4.Comments and suggestions -->
+        <label for="comments-suggestions">Any comments or suggestions?
+            <textarea id="comments-suggestions" rows="5" cols="60" placeholder="Enter your comments here."></textarea>
+        </label>
+
+        <!-- 5. What sandwich do you want -->
+        <legend>
+            <p><small>Thank you for taking our survey,
+                    as a small gratitude for your effort we would like to give our thanks
+                    back to you by gifting you a free meal next visit!
+                </small></p>
+            <p>Please choose
+                what you would like and we will email you the coupon!</p>
+        </legend>
+        <label for="chicken-sandwich"><input type="radio" class="inline" value= "regular"id="chicken-sandwich"
+                name="meal-option">Chicken Sandwich
+        </label>
+        <label for="s-chicken-sandwich"><input type="radio" class="inline" value="spicy" id="s-chicken-sandwich"
+                name="meal-option">Spicy Chicken
+            Sandwich
+        </label>
+        <label for="bites-fries"><input type="radio" class="inline" value="bites-fries" id="bites-fries" name="meal-option">Chicken Bites &
+            Curly Fries
+        </label>
+
+        <!-- terms -->
+        <label for="terms-and-conditions">
+            <input id="terms-and-conditions" type="checkbox" class="inline" value="accepted" required name="terms-and-conditions" /> I
+            accept that this coupon will only be available for up to a year from now before it expires</a>
+        </label>
+        <input type="submit" id="submit" value="Submit">
+
+    </form>
+
+</body>
+
+<footer>
+    <small>@Chicken Sandwich Shop 2025</small>
+</footer>
+
+</html>

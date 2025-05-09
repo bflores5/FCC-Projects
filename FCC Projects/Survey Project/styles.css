@@ -1,0 +1,67 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(236, 57, 57);
+    background-color: rgb(241, 241, 103);
+}
+
+h1,
+p {
+    margin: 1em auto;
+    text-align: center;
+    color: rgb(236, 57, 57);
+}
+
+form {
+    width: 40vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input, textarea {
+    border: 1px solid rgb(236, 57, 57);
+    color: rgb(236, 57, 57);
+  }
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+}
+
+option{
+    display: inline-block;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: rgb(108, 12, 12);
+    border-color: rgb(251, 29, 4);
+    min-width: 300px;
+  }
+
+footer{
+    text-align: center;
+}
+  
