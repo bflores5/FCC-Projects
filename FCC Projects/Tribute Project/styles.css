@@ -40,6 +40,16 @@ header p {
     font-style: italic;
     margin-bottom: 30px;
 }
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.image {
+    text-align: center;
+}
 
 .image img {
     width: 100%;
